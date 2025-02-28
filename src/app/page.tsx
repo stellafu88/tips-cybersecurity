@@ -7,7 +7,7 @@ export default function Home() {
       <div className="intro space-y-4 mb-8">
         <p>
           Financial institutions work to protect your financial information, but
-          you also play a vital role. While cybercrime can't be entirely
+          you also play a vital role. While cybercrime can&apos;t be entirely
           prevented, understanding account takeovers and taking proactive steps
           can help secure your information.
         </p>
@@ -60,10 +60,10 @@ export default function Home() {
         <li>Missing funds or securities: unexpected depletion of assets.</li>
         <li>
           Unauthorized account changes: address, email, or phone number updates
-          you didn't make.
+          you didn&apos;t make.
         </li>
         <li>
-          Unexpected notifications: alerts about changes you didn't request.
+          Unexpected notifications: alerts about changes you didn&apos;t request.
         </li>
         <li>
           Missing financial documents: statements or confirmations not received.
@@ -89,7 +89,7 @@ export default function Home() {
           <li>
             <strong>Protect Your Personal Information</strong>
             <p>
-              Don't share sensitive information unless you verify the request.
+              Don&apos;t share sensitive information unless you verify the request.
             </p>
           </li>
           <li>
@@ -132,7 +132,7 @@ export default function Home() {
           <li>
             <strong>Browse Carefully</strong>
             <p>
-              Ensure sites begin with "https" and have a padlock symbol. Avoid
+              Ensure sites begin with &quot;https&quot; and have a padlock symbol. Avoid
               opening multiple webpages in a single browser. Always log out
               after use.
             </p>
