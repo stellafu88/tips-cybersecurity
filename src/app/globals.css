@@ -1,24 +1,89 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-gill-sans {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Reset */
+* {
+  font-family: "Gill Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 6rem;
+  background-color: #ebebeb;
+  color: #1e1e1e;
+  border: 0.5vw solid #ffcc00;
+  font-size: 18pt;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 1.5rem 3rem;
+    border-width: 1vw;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media screen and (max-width: 480px) {
+  body {
+    margin: 1rem 1.5rem;
+    border-width: 2vw;
+  }
+}
+
+.content {
+  width: 80%;
+  margin-bottom: 3.125rem;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+/* Typography */
+h1 {
+  font-size: 4.375rem;
+}
+
+h2 {
+  font-size: 2.375rem;
+}
+
+/* Components */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.intro p {
+  margin: 0;
+}
+
+.takeovers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.takeover-box {
+  width: 15.625rem;
+  flex-grow: 1;
+  padding: 1.25rem;
+  margin: 1rem;
+  border: 0.1vw solid;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .takeover-box {
+    border-width: 0.2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .takeover-box {
+    border-width: 0.3vw;
+  }
 }
